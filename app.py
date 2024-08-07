@@ -3,14 +3,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 import utils
-import home_app
 import list_up_app
 import budget_app
 import edu_budget_app
-import info21C_app
-import g2b_app
-import news_app
-import stat_app
+
 
 import time
 import warnings
@@ -107,7 +103,7 @@ def main():
 
         if selected == "납품 현황":
             utils.log_user_action(st.session_state['username'], "viewed HOME", "SERVICE_DATA", "logs")
-            home_app.home_app()
+            # home_app.home_app()
         elif selected == "사업 현황":
             utils.log_user_action(st.session_state['username'], "viewed list", "SERVICE_DATA", "logs")
             list_up_app.list_up_app()
@@ -117,18 +113,18 @@ def main():
         elif selected == "교육청 예산서":
             utils.log_user_action(st.session_state['username'], "viewed 교육청 예산서", "SERVICE_DATA", "logs")
             edu_budget_app.edu_budget_app()
-        elif selected == "인포21C":
-            utils.log_user_action(st.session_state['username'], "viewed 인포21C", "SERVICE_DATA", "logs")
-            info21C_app.info21C_app()
-        elif selected == "종합쇼핑몰 납품상세 내역":
-            utils.log_user_action(st.session_state['username'], "viewed 종합쇼핑몰 납품상세 내역", "SERVICE_DATA", "logs")
-            g2b_app.g2b_app()
-        elif selected == "뉴스":
-            utils.log_user_action(st.session_state['username'], "viewed 뉴스", "SERVICE_DATA", "logs")
-            news_app.news_app()
-        elif selected == "STAT":
-            utils.log_user_action(st.session_state['username'], "viewed STAT", "SERVICE_DATA", "logs")
-            stat_app.stat_app()
+        # elif selected == "인포21C":
+        #     utils.log_user_action(st.session_state['username'], "viewed 인포21C", "SERVICE_DATA", "logs")
+        #     info21C_app.info21C_app()
+        # elif selected == "종합쇼핑몰 납품상세 내역":
+        #     utils.log_user_action(st.session_state['username'], "viewed 종합쇼핑몰 납품상세 내역", "SERVICE_DATA", "logs")
+        #     g2b_app.g2b_app()
+        # elif selected == "뉴스":
+        #     utils.log_user_action(st.session_state['username'], "viewed 뉴스", "SERVICE_DATA", "logs")
+        #     news_app.news_app()
+        # elif selected == "STAT":
+        #     utils.log_user_action(st.session_state['username'], "viewed STAT", "SERVICE_DATA", "logs")
+        #     stat_app.stat_app()
 
     else:
         st.write("계속하시려면 로그인하세요.")
