@@ -92,8 +92,8 @@ def main():
                 "nav-link-selected": {"background-color": "#02ab21", "color": "#fff"},
             }
 
-            selected = option_menu("Mido Plus", ["납품 현황", "사업 현황", "지자체 예산서", "교육청 예산서", "인포21C", "종합쇼핑몰 납품상세 내역", "뉴스", "STAT"],
-                                   icons=["graph-up-arrow", "list-check", "building", "building", "info-square", "cart4", "pencil-square", "clipboard-data"],
+            selected = option_menu("Mido Plus", ["사업 현황", "지자체 예산서", "교육청 예산서"],
+                                   icons=["list-check", "building", "building"],
                                    menu_icon="cast",
                                    default_index=0,
                                    orientation="vertical",
