@@ -1,0 +1,39 @@
+# Python 관련
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# 환경 설정 파일
+.env
+*.env
+
+# OS별 파일 무시
+.DS_Store
+Thumbs.db
+
+# IDE 설정 파일
+.vscode/
+.idea/
+
+# 빌드 디렉토리
+build/
+dist/
+*.egg-info/
+
+# 가상 환경 폴더
+venv/
+env/
+
+# Streamlit 관련
+.streamlit/
+
+# config 관련
+.config/
+
+# 스크립트 관련
+*.ipynb
+.ipynb_checkpoints/
+
+# 데이터 관련
+data/
