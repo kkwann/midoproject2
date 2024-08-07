@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
 import pandas as pd
-import geopandas as gpd
-import pandas_gbq
+# import geopandas as gpd
+# import pandas_gbq
 from datetime import datetime, timedelta
 import pytz
 import json
