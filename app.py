@@ -42,7 +42,7 @@ def logout():
 
 def main():
 
-    st.set_page_config(page_title="Mido_Plus",
+    st.set_page_config(page_title="EcoGround",
                        page_icon=None,
                        layout="wide",
                        initial_sidebar_state="auto",
@@ -92,7 +92,7 @@ def main():
                 "nav-link-selected": {"background-color": "#02ab21", "color": "#fff"},
             }
 
-            selected = option_menu("Mido Plus", ["사업 현황", "지자체 예산서", "교육청 예산서"],
+            selected = option_menu("EcoGround", ["사업 현황", "지자체 예산서", "교육청 예산서"],
                                    icons=["list-check", "building", "building"],
                                    menu_icon="cast",
                                    default_index=0,
